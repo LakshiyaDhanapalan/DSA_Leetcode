@@ -21,7 +21,7 @@ class Solution
         preorder(root, result);
         return result;
     }
-    private void preorder(TreeNode node, List<Integer> result)
+    private void preorder(TreeNode node , List<Integer> result)
     {
         if (node == null)
         return;
