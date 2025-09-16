@@ -20,12 +20,10 @@ class Solution {
         dummy.next = head;
         ListNode prev = dummy;
 
-        // Step 1: Move prev to node before left
+     
         for (int i = 1; i < left; i++) {
             prev = prev.next;
         }
-
-        // Step 2: Start reversal
         ListNode curr = prev.next;
         ListNode next = null;
 
