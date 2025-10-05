@@ -34,7 +34,7 @@
             slow = slow.next;
             fast = fast.next.next;
         }
-        TreeNode root = new TreeNode(slow.val);//Making A Root Node
+        TreeNode root = new TreeNode(slow.val);
         slow_Prev.next = null;
         root.left = sortedListToBST(head);
         root.right = sortedListToBST(slow.next);
